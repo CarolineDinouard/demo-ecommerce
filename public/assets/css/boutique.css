@@ -1,5 +1,6 @@
 body{
     position: relative;
+    min-height: 100vh;
 }
 .navbar-item-custom, .navbar-item-custom a{
     color: #FFF;
@@ -11,6 +12,7 @@ body{
     width: 100%;
     background-color: #dfeaff;
     padding-top: 15px;
+    margin-top: 50px;
 }
 .product-item{
     text-transform: uppercase;
@@ -35,4 +37,12 @@ body{
 }
 .product-page-price{
     font-size: 19px;
+}
+.cart-icon {
+    height: 35px;
+    margin-left: 20px;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 20px;
+
 }
