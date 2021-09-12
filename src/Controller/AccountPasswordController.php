@@ -20,6 +20,7 @@ class AccountPasswordController extends AbstractController
     }
 
     /**
+     * Modifier le mot de passe d'un utilisateur
      * @Route("/mon-compte/motdepasse", name="account_password")
      */
     public function index(Request $request, UserPasswordEncoderInterface $encoder): Response

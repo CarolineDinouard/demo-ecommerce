@@ -22,6 +22,7 @@ class ProductController extends AbstractController
     }
 
     /**
+     * Voir l'ensemble des produits ou les produits filtrés
      * @Route("/nos-produits", name="products")
      */
     public function index(Request $request): Response
@@ -43,6 +44,7 @@ class ProductController extends AbstractController
     }
 
     /**
+     * Visualiser un produit
      * @Route("/produit/{slug}", name="product")
      */
     public function show($slug): Response

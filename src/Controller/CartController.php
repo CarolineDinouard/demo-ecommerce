@@ -23,6 +23,7 @@ class CartController extends AbstractController
 
 
     /**
+     * Visualiser le panier
      * @Route("/mon-panier", name="cart")
      */
     public function index(Cart $cart): Response
@@ -33,6 +34,7 @@ class CartController extends AbstractController
     }
 
     /**
+     * Ajouter un produit au panier
      * @Route("/cart/add/{id}", name="add_to_cart")
      */
     public function add(Cart $cart, $id): Response
@@ -42,6 +44,7 @@ class CartController extends AbstractController
     }
 
     /**
+     * Supprimer le panier
      * @Route("/cart/remove", name="remove_cart")
      */
     public function remove(Cart $cart): Response
@@ -51,6 +54,7 @@ class CartController extends AbstractController
     }
 
     /**
+     * Supprimer un produit du panier
      * @Route("/cart/delete/{id}", name="delete_to_cart")
      */
     public function delete(Cart $cart, $id): Response
@@ -60,6 +64,7 @@ class CartController extends AbstractController
     }
 
     /**
+     * Réduire la quantité d'un produit du panier
      * @Route("/cart/decrease/{id}", name="decrease_to_cart")
      */
     public function decrease(Cart $cart, $id): Response

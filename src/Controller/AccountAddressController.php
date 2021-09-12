@@ -33,6 +33,7 @@ class AccountAddressController extends AbstractController
     }
 
     /**
+     * Ajouter une adresse à son compte utilisateur
      * @Route("/mon-compte/ajouter-adresse", name="account_address_add")
      */
     public function add(Request $request): Response
@@ -55,6 +56,7 @@ class AccountAddressController extends AbstractController
     }
 
     /**
+     * Modifier l'adresse d'un utilisateur
      * @Route("/mon-compte/modifier-adresse/{id}", name="account_address_edit")
      */
     public function edit(Request $request, $id): Response
@@ -80,6 +82,7 @@ class AccountAddressController extends AbstractController
     }
 
     /**
+     * Supprimer l'adresse d'un utilisateur
      * @Route("/mon-compte/supprimer-adresse/{id}", name="account_address_delete")
      */
     public function delete($id): Response

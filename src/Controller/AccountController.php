@@ -9,6 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class AccountController extends AbstractController
 {
     /**
+     * Accéder à son compte utilisateur
      * @Route("/mon-compte", name="account")
      */
     public function index(): Response

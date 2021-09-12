@@ -17,6 +17,7 @@ class RegistrationController extends AbstractController
 {
 
     /**
+     * Création de compte sur le site
      * @Route("/inscription", name="app_register")
      */
     public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder, GuardAuthenticatorHandler $guardHandler, AppAuthenticator $authenticator): Response
